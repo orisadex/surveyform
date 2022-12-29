@@ -7,6 +7,20 @@
     <title>Survey Form</title>
 </head>
 <body>
-    
+    <h1 id="title">freeCodeCamp Survey Camp</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form action="" id="survey-form">
+        <label id="name-label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <label id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <label id="number-label">Age(optional)</label>
+        <input type="number" name="number" id="number" placeholder="Age" min="12" max="100">
+        <select name="dropdown" id="dropdown">
+            <option value="" selected disabled>Select current role</option>
+            <option value="student">Student</option>
+            <option value="fulltimejob">Full Time Job</option>
+        </select>
+    </form>
 </body>
 </html>
