@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 id="title">freeCodeCamp Survey Camp</h1>
@@ -30,6 +31,33 @@
         <label for="notsure">
             <input type="radio" value="notsure" name="group1" id="notsure">Not Sure
         </label>
+        
+        <input type="checkbox" name="frontend" id="frontend" value="frontend">
+        <label for="frontend">Fronted-end Projects</label>
+        <input type="checkbox" name="backend" id="backend" value="backend">
+        <label for="backend">Back-end Projects</label>
+        <input type="checkbox" name="datavisualization" id="datavisualization" value="datavisualization">
+        <label for="datavisualization">Data Visualization</label>
+        <input type="checkbox" name="challenges" id="challenges" value="challenges">
+        <label for="challenges">Challenges</label>
+        <input type="checkbox" name="opensource" id="opensource" value="opensource">
+        <label for="opensource">Open Source Community</label>
+        <input type="checkbox" name="gitterhelp" id="gitterhelp" value="gitterhelp">
+        <label for="gitterhelp">Gitter help rooms</label>
+        <input type="checkbox" name="videos" id="videos" value="videos">
+        <label for="videos">Videos</label>
+        <input type="checkbox" name="meetups" id="meetups" value="meetups">
+        <label for="meetups">City Meetups</label>
+        <input type="checkbox" name="wiki" id="wiki" value="wiki">
+        <label for="wiki">Wiki</label>
+        <input type="checkbox" name="forum" id="forum" value="forum">
+        <label for="forum">Forum</label>
+        <input type="checkbox" name="additionalcourses" id="additionalcourses" value="additionalcourses">
+        <label for="additionalcourses">Addiotinal Courses</label>
+
+        <textarea name="suggestion" id="suggestion" cols="30" rows="10"></textarea>
+
+        <input type="submit" id="submit" value="Submit">
     </form>
 </body>
 </html>
