@@ -1,1 +1,27 @@
+@charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    text-align: center;
+}
+
+#title {
+    padding-top: 30px;
+}
+
+#description {
+    font-size: 1.2em;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+#survey-form {
+    width: 300px;
+    background-color: rgba(27, 27, 50, 0.8);
+    margin: auto;
+    padding: 30px;
+}
