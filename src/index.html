@@ -19,36 +19,41 @@
     <form action="" id="survey-form">
         <div class="form-group">
             <label id="name-label">Name</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
         </div>
         
         <div class="form-group">
             <label id="email-label">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
         </div>
         
         <div class="form-group">
             <label id="number-label">Age(optional)</label>
-            <input type="number" name="number" id="number" placeholder="Age" min="12" max="100">
+            <input type="number" name="number" id="number" class="form-control" placeholder="Age" min="10" max="99">
         </div>
         
         <div class="form-group">
+            <p>Which option best describes your current role?</p>
             <select name="dropdown" id="dropdown">
                 <option value="" selected disabled>Select current role</option>
                 <option value="student">Student</option>
                 <option value="fulltimejob">Full Time Job</option>
+                <option value="fulltimejob">Full Time Learner</option>
+                <option value="fulltimejob">Prefer not to say</option>
+                <option value="fulltimejob">Other</option>
             </select>
         </div>
 
         <div class="form-group">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
             <label for="definitely">
-                <input type="radio" value="definitely" name="group1" id="definitely">Definitely
+                <input type="radio" value="definitely" name="group1" class="radio-button" id="definitely">Definitely
             </label>
             <label for="maybe">
-                <input type="radio" value="maybe" name="group1" id="maybe">Maybe
+                <input type="radio" value="maybe" name="group1" class="radio-button" id="maybe">Maybe
             </label>
             <label for="notsure">
-                <input type="radio" value="notsure" name="group1" id="notsure">Not Sure
+                <input type="radio" value="notsure" name="group1" class="radio-button" id="notsure">Not Sure
             </label>
         </div>
         
