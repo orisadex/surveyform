@@ -23,12 +23,12 @@ header {
     width: 550px;
     background-color: rgba(28, 28, 68, 0.8);
     margin: auto;
-    padding: 30px;
-    border-radius: 10px;
+    padding: 35px;
+    border-radius: 8px;
 }
 
 .form-group {
-    margin: 0 auto 1.25rem auto;
+    margin: 0 auto 1.5rem auto;
 }
 
 label, .form-group > p {
@@ -38,16 +38,55 @@ label, .form-group > p {
     margin-bottom: 0.125rem;
 }
 
-.form-control, select {
+.form-group > p {
+    display: flex;
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 0.6rem;
+}
+
+.form-control {
     width: 100%;
     height: 1.7rem;
     padding-left: 0.5em;
+    border-radius: 5px;
 }
 
-.radio-button {
+span {
+    font-size: 0.8em;
+    margin-left: 0.2rem;
+}
+
+#dropdown {
+    width: 100%;
+    height: 2rem;
+    padding-left: 0.7em;
+    border-radius: 5px;
+}
+
+.radio-button, #input-checkbox {
     margin-right: 0.5rem;
 }
 
 #notsure {
     margin-bottom: 10px;
+}
+
+.input-textarea {
+    width: 100%;
+    padding: 0.625rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#submit {
+    background-color: green;
+    width: 100%;
+    height: 2.8rem;
+    padding: 10px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
 }
