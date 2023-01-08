@@ -1,11 +1,31 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+:root {
+    --cor1: #f3f3f3;
+    --cor2: #1b1b32;
+    --cor3: rgba(27, 27, 50, 0.8);
+    --cor4: #37af65;
+    --font: 'Poppins', sans-serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
+body {
+    font-family: var(--font);
+    background-color: var(--cor1);
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url('../media/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 header {
+    color: white;
     text-align: center;
 }
 
@@ -20,9 +40,10 @@ header {
 }
 
 #survey-form {
-    width: 550px;
-    background-color: rgba(28, 28, 68, 0.8);
-    margin: auto;
+    max-width: 600px;
+    min-width: 300px;
+    background-color: var(--cor3);
+    margin: 0 auto 20px auto;
     padding: 35px;
     border-radius: 8px;
 }
@@ -32,14 +53,14 @@ header {
 }
 
 label, .form-group > p {
-    display: flex;
+    display: block;
     font-size: 1.2em;
     color: white;
     margin-bottom: 0.125rem;
 }
 
 .form-group > p {
-    display: flex;
+    display: block;
     font-size: 1.3em;
     color: white;
     margin-bottom: 0.6rem;
@@ -47,19 +68,23 @@ label, .form-group > p {
 
 .form-control {
     width: 100%;
-    height: 1.7rem;
+    height: 30px;
+    font-size: 1em;
     padding-left: 0.5em;
     border-radius: 5px;
 }
 
 span {
-    font-size: 0.8em;
+    position: relative;
+    top: -5px;
+    font-size: 0.7em;
     margin-left: 0.2rem;
 }
 
 #dropdown {
     width: 100%;
     height: 2rem;
+    font-size: 1em;
     padding-left: 0.7em;
     border-radius: 5px;
 }
@@ -74,13 +99,16 @@ span {
 
 .input-textarea {
     width: 100%;
+    height: 120px;
+    font-family: var(--font);
+    font-size: medium;
     padding: 0.625rem;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
 #submit {
-    background-color: green;
+    background-color: var(--cor4);
     width: 100%;
     height: 2.8rem;
     padding: 10px;
